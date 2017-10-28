@@ -201,6 +201,7 @@ public class MainActivity extends AppCompatActivity implements OnProductSelected
                         commentIntent.putExtra("title", editTitle.getText().toString());
                         commentIntent.putExtra("comment", editcomment.getText().toString());
                         startService(commentIntent);
+                        dialog.dismiss();
 
                     }
                 });
